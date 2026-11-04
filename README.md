@@ -82,3 +82,4 @@ abstention), `service.py` + `db.py` (sessions, auth, audit), `factory.py`, `eval
 Limitations: the corpus is tiny and synthetic, 40 questions cannot separate configurations, faithfulness is a
 lexical proxy (not an entailment judge), and the 1.5b model scored lower than plain quoted answers.
 Not verified: Docker, Qdrant, PostgreSQL and LangChain code paths.
+"# enterprise-knowledge-assistant" 
