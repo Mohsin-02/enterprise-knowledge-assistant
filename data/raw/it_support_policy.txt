@@ -1,0 +1,11 @@
+NOVA DEMO COMPANY - IT SUPPORT POLICY
+Synthetic training document. These are fictional rules for this project.
+
+Creating a support ticket
+Employees should open an IT support ticket through the service portal. A useful ticket includes the affected application, the time of the problem, the error message, and the business impact. Screenshots should exclude passwords, access tokens, and customer personal information. The service desk assigns each ticket a reference number. Employees can use that number to request a progress update without opening duplicate tickets for the same incident.
+
+Priority and response targets
+A priority one incident is a widespread outage that stops a critical business service or an active suspected security compromise. The first response target for a priority one incident is fifteen minutes, with support available at all hours. A priority two incident blocks a single employee from performing essential work and has a first response target of four business hours. A routine access request or software installation request is priority three and has a first response target of one business day. First response means acknowledgement and initial investigation; it does not promise complete resolution within that period.
+
+Access and escalation
+New access requests require the employee's reporting manager to approve the business need. Administrative access also requires approval from the application owner. Employees must never share account passwords with support staff. If a priority two ticket has not received a response within four business hours, the employee may escalate using the original ticket number. A lost laptop should be reported immediately through the security incident option in the service portal or the emergency service desk contact.

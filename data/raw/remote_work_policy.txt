@@ -1,0 +1,11 @@
+NOVA DEMO COMPANY - REMOTE WORK POLICY
+Synthetic training document. These are fictional rules for this project.
+
+Eligibility and approval
+Employees whose duties can be performed remotely may request up to two remote working days per week. The reporting manager approves the schedule. Remote days are a working arrangement and do not reduce the employee's annual leave balance. A new employee becomes eligible after completing thirty calendar days of employment. The manager may approve a temporary exception and must record the reason in the employee portal.
+
+Availability and equipment
+Employees working remotely must be available for collaboration from ten in the morning until four in the afternoon in their assigned office time zone. They must attend scheduled meetings and update their calendar when unavailable. The company provides a managed laptop for eligible roles. Personal computers must not be used to store customer records. Employees should use the approved virtual private network when connecting to internal systems from an external network. Shared household devices must not be used to access company accounts.
+
+Security and changes
+Confidential meetings should be held in a private space. Screens must be locked when unattended. Lost laptops or suspected account compromise must be reported to the IT service desk immediately. A manager may temporarily change a remote schedule for an onsite customer workshop or an operational incident. The manager should give two working days of notice where practical. Employees needing a longer remote arrangement should contact Human Resources and obtain department head approval before changing their usual work location.

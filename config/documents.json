@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "documents": {
+    "leave_policy.txt": {
+      "title": "Employee leave policy",
+      "document_family": "leave-policy",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees",
+        "hr"
+      ]
+    },
+    "remote_work_policy.txt": {
+      "title": "Remote work policy",
+      "document_family": "remote-work-policy",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees",
+        "hr",
+        "it"
+      ]
+    },
+    "it_support_policy.txt": {
+      "title": "IT support policy",
+      "document_family": "it-support-policy",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees",
+        "it"
+      ]
+    },
+    "reimbursement_policy_2024.txt": {
+      "title": "Employee reimbursement policy",
+      "document_family": "reimbursement-policy",
+      "version": "2024",
+      "effective_from": "2024-01-01",
+      "effective_to": "2025-12-31",
+      "access_groups": [
+        "employees",
+        "finance",
+        "hr"
+      ]
+    },
+    "reimbursement_policy_2026.txt": {
+      "title": "Employee reimbursement policy",
+      "document_family": "reimbursement-policy",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees",
+        "finance",
+        "hr"
+      ]
+    },
+    "demo/onboarding.docx": {
+      "title": "Employee onboarding",
+      "document_family": "onboarding-guide",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees"
+      ]
+    },
+    "demo/knowledge_base.html": {
+      "title": "IT knowledge base",
+      "document_family": "it-knowledge-base",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees"
+      ]
+    },
+    "demo/expense_limits.xlsx": {
+      "title": "Reimbursement limit table",
+      "document_family": "expense-limit-table",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees"
+      ]
+    },
+    "hr/disciplinary_procedure.txt": {
+      "title": "Disciplinary procedure",
+      "document_family": "disciplinary-procedure",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "hr"
+      ]
+    },
+    "finance/vendor_payment_controls.md": {
+      "title": "Vendor payment controls",
+      "document_family": "vendor-payment-controls",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "finance"
+      ]
+    },
+    "security/information_security_handbook.pdf": {
+      "title": "Information security handbook",
+      "document_family": "information-security-handbook",
+      "version": "2026",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "access_groups": [
+        "employees",
+        "it"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+generator: none (quotes only)
+
+[BOTH BAD] P3 (paraphrase, dev) expected_abstain=False
+  Q: How long do I have to file an expense claim?
+  LLM   : abstained=True correct=False faithful=None/None versions_cited=None | "I could not find supporting information for that in the documents you have access to, so I won't guess."
+  QUOTES: abstained=True correct=False | "I could not find supporting information for that in the documents you have access to, so I won't guess."
+
+[BOTH BAD] F2 (followup, test) expected_abstain=False
+  Q: What is the annual reimbursement limit in 2024?
+  LLM   : abstained=False correct=False faithful=1/1 versions_cited=None | '- Internet reimbursements count toward the annual limit. [E1]'
+  QUOTES: abstained=False correct=False | '- Internet reimbursements count toward the annual limit. [E1]'
+
+Summary: LLM worse on 0 turns, better on 0 turns, of 43.

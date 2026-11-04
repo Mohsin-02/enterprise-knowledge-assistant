@@ -1,0 +1,294 @@
+{
+  "environment": {
+    "date": "2026-11-03",
+    "embedder": "hashing-ngrams-v1-2048",
+    "reranker": "lexical-overlap-heuristic",
+    "generator": "extractive (no LLM)",
+    "hardware": "x86_64, 1 CPU(s), Python 3.12.3",
+    "documents": 11,
+    "chunks": 31,
+    "questions": 40,
+    "dev": 20,
+    "test": 20
+  },
+  "retrieval": {
+    "dev": {
+      "dense only": {
+        "recall@1": 0.732,
+        "recall@3": 0.958,
+        "recall@5": 1.0,
+        "precision@1": 0.786,
+        "precision@3": 0.405,
+        "precision@5": 0.271,
+        "ndcg@1": 0.786,
+        "ndcg@3": 0.914,
+        "ndcg@5": 0.928,
+        "mrr": 0.893,
+        "latency_ms_p50": 0.57,
+        "latency_ms_p95": 0.77,
+        "questions": 14
+      },
+      "BM25 only": {
+        "recall@1": 0.732,
+        "recall@3": 0.917,
+        "recall@5": 0.958,
+        "precision@1": 0.786,
+        "precision@3": 0.357,
+        "precision@5": 0.243,
+        "ndcg@1": 0.786,
+        "ndcg@3": 0.876,
+        "ndcg@5": 0.892,
+        "mrr": 0.881,
+        "latency_ms_p50": 0.08,
+        "latency_ms_p95": 0.17,
+        "questions": 14
+      },
+      "hybrid (RRF)": {
+        "recall@1": 0.804,
+        "recall@3": 0.935,
+        "recall@5": 1.0,
+        "precision@1": 0.857,
+        "precision@3": 0.381,
+        "precision@5": 0.271,
+        "ndcg@1": 0.857,
+        "ndcg@3": 0.914,
+        "ndcg@5": 0.94,
+        "mrr": 0.917,
+        "latency_ms_p50": 0.72,
+        "latency_ms_p95": 0.96,
+        "questions": 14
+      },
+      "hybrid + rerank": {
+        "recall@1": 0.899,
+        "recall@3": 0.982,
+        "recall@5": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.429,
+        "precision@5": 0.271,
+        "ndcg@1": 1.0,
+        "ndcg@3": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "latency_ms_p50": 2.57,
+        "latency_ms_p95": 4.3,
+        "questions": 14
+      }
+    },
+    "test": {
+      "dense only": {
+        "recall@1": 0.75,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "precision@1": 0.857,
+        "precision@3": 0.405,
+        "precision@5": 0.243,
+        "ndcg@1": 0.857,
+        "ndcg@3": 0.947,
+        "ndcg@5": 0.947,
+        "mrr": 0.929,
+        "latency_ms_p50": 0.56,
+        "latency_ms_p95": 0.61,
+        "questions": 14
+      },
+      "BM25 only": {
+        "recall@1": 0.679,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "precision@1": 0.786,
+        "precision@3": 0.405,
+        "precision@5": 0.243,
+        "ndcg@1": 0.786,
+        "ndcg@3": 0.921,
+        "ndcg@5": 0.921,
+        "mrr": 0.893,
+        "latency_ms_p50": 0.08,
+        "latency_ms_p95": 0.15,
+        "questions": 14
+      },
+      "hybrid (RRF)": {
+        "recall@1": 0.75,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "precision@1": 0.857,
+        "precision@3": 0.405,
+        "precision@5": 0.243,
+        "ndcg@1": 0.857,
+        "ndcg@3": 0.947,
+        "ndcg@5": 0.947,
+        "mrr": 0.929,
+        "latency_ms_p50": 0.67,
+        "latency_ms_p95": 0.71,
+        "questions": 14
+      },
+      "hybrid + rerank": {
+        "recall@1": 0.821,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "precision@1": 0.929,
+        "precision@3": 0.405,
+        "precision@5": 0.243,
+        "ndcg@1": 0.929,
+        "ndcg@3": 0.974,
+        "ndcg@5": 0.974,
+        "mrr": 0.964,
+        "latency_ms_p50": 2.5,
+        "latency_ms_p95": 4.29,
+        "questions": 14
+      }
+    }
+  },
+  "answers": {
+    "dev": {
+      "turns": 22,
+      "answer_correctness": 0.955,
+      "answerable_correct": 0.944,
+      "abstention_correct (should-refuse)": 1.0,
+      "false_abstentions (answerable refused)": 1,
+      "citation_hit_rate": 1.0,
+      "citation_precision": 0.962,
+      "both_versions_cited (comparisons)": 1.0,
+      "faithfulness_proxy (lexical)": 1.0,
+      "permission_leaks (must be 0)": 0,
+      "answer_latency_ms_p50": 3.84,
+      "answer_latency_ms_p95": 5.67,
+      "by_category": {
+        "comparison": "1/1",
+        "cross_document": "1/1",
+        "exact_id": "2/2",
+        "followup": "4/4",
+        "format_pdf": "1/1",
+        "format_xlsx": "1/1",
+        "lookup": "3/3",
+        "paraphrase": "1/2",
+        "permission_allowed": "1/1",
+        "permission_denied": "2/2",
+        "unsupported": "2/2",
+        "version": "2/2"
+      }
+    },
+    "test": {
+      "turns": 21,
+      "answer_correctness": 0.952,
+      "answerable_correct": 0.938,
+      "abstention_correct (should-refuse)": 1.0,
+      "false_abstentions (answerable refused)": 0,
+      "citation_hit_rate": 1.0,
+      "citation_precision": 0.893,
+      "both_versions_cited (comparisons)": 1.0,
+      "faithfulness_proxy (lexical)": 1.0,
+      "permission_leaks (must be 0)": 0,
+      "answer_latency_ms_p50": 3.79,
+      "answer_latency_ms_p95": 5.48,
+      "by_category": {
+        "comparison": "2/2",
+        "cross_document": "1/1",
+        "exact_id": "1/1",
+        "followup": "1/2",
+        "format_docx": "1/1",
+        "format_html": "1/1",
+        "lookup": "3/3",
+        "paraphrase": "2/2",
+        "permission_allowed": "1/1",
+        "permission_denied": "2/2",
+        "unsupported": "3/3",
+        "version": "2/2"
+      }
+    }
+  },
+  "calibration": {
+    "chosen": 0.3,
+    "sweep": [
+      [
+        0.3,
+        1.0
+      ],
+      [
+        0.4,
+        0.9545454545454546
+      ],
+      [
+        0.5,
+        0.9545454545454546
+      ],
+      [
+        0.6,
+        0.9545454545454546
+      ],
+      [
+        0.7,
+        0.8636363636363636
+      ],
+      [
+        0.8,
+        0.8181818181818182
+      ]
+    ],
+    "answers_at_chosen": {
+      "dev": {
+        "turns": 22,
+        "answer_correctness": 1.0,
+        "answerable_correct": 1.0,
+        "abstention_correct (should-refuse)": 1.0,
+        "false_abstentions (answerable refused)": 0,
+        "citation_hit_rate": 1.0,
+        "citation_precision": 0.964,
+        "both_versions_cited (comparisons)": 1.0,
+        "faithfulness_proxy (lexical)": 1.0,
+        "permission_leaks (must be 0)": 0,
+        "answer_latency_ms_p50": 3.88,
+        "answer_latency_ms_p95": 5.78,
+        "by_category": {
+          "comparison": "1/1",
+          "cross_document": "1/1",
+          "exact_id": "2/2",
+          "followup": "4/4",
+          "format_pdf": "1/1",
+          "format_xlsx": "1/1",
+          "lookup": "3/3",
+          "paraphrase": "2/2",
+          "permission_allowed": "1/1",
+          "permission_denied": "2/2",
+          "unsupported": "2/2",
+          "version": "2/2"
+        }
+      },
+      "test": {
+        "turns": 21,
+        "answer_correctness": 0.905,
+        "answerable_correct": 0.938,
+        "abstention_correct (should-refuse)": 0.8,
+        "false_abstentions (answerable refused)": 0,
+        "citation_hit_rate": 1.0,
+        "citation_precision": 0.893,
+        "both_versions_cited (comparisons)": 1.0,
+        "faithfulness_proxy (lexical)": 1.0,
+        "permission_leaks (must be 0)": 0,
+        "answer_latency_ms_p50": 3.89,
+        "answer_latency_ms_p95": 6.32,
+        "by_category": {
+          "comparison": "2/2",
+          "cross_document": "1/1",
+          "exact_id": "1/1",
+          "followup": "1/2",
+          "format_docx": "1/1",
+          "format_html": "1/1",
+          "lookup": "3/3",
+          "paraphrase": "2/2",
+          "permission_allowed": "1/1",
+          "permission_denied": "2/2",
+          "unsupported": "2/3",
+          "version": "2/2"
+        }
+      }
+    }
+  },
+  "caveats": [
+    "Small synthetic corpus (about 30 chunks): retrieval metrics saturate and differences between configurations are not statistically meaningful. Do not read them as production quality.",
+    "With the hashing embedder, 'dense' retrieval is lexical; it does not capture paraphrase the way BGE does. Re-run with ERAG_EMBEDDER=bge-small (or bge-m3) and ERAG_RERANKER=cross-encoder.",
+    "The lexical reranker is a heuristic stand-in for a cross-encoder.",
+    "Without an LLM the answers are extractive quotes, so faithfulness_proxy is near-trivial; it is a lexical support check, not an entailment judge. Inspect answers by hand and, if you add an LLM judge, treat it as supplementary evidence.",
+    "Latency is measured on this machine only and excludes model download/warm-up.",
+    "The abstention threshold is chosen on the dev split only (--calibrate). Be aware that a few heuristic fixes in rag.py (question-filler words, section context in support scoring) were written while probing questions that also appear in the dev split, so dev scores are optimistic; the test split was not used to tune anything, and its failures (see by-category counts) are left unfixed on purpose.",
+    "Known failure types with the offline stack: vocabulary gaps ('file a claim' vs 'submitted'; 'annual limit' vs 'up to INR 30,000 per calendar year'). A neural embedder, a cross-encoder and an LLM are expected to help, but that has not been measured here."
+  ]
+}

@@ -1,0 +1,3 @@
+-r requirements.txt
+httpx>=0.27        # FastAPI TestClient
+reportlab>=4.0     # create_extra_corpus.py builds the sample PDF

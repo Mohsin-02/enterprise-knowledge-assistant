@@ -1,0 +1,7 @@
+.venv
+__pycache__
+data/app.db
+data/index
+data/processed
+data/demo_tokens.json
+.env

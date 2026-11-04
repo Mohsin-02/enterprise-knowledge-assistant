@@ -1,0 +1,5 @@
+# Real models and services (large downloads). Use Python 3.12 if a wheel is missing for your version.
+-r requirements.txt
+sentence-transformers>=3.0     # BGE embeddings (bge-small / bge-m3) and the cross-encoder reranker
+qdrant-client>=1.10            # Qdrant vector store
+langchain-core>=0.2            # optional LangChain orchestration

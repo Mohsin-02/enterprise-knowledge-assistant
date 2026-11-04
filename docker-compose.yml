@@ -1,0 +1,47 @@
+# docker compose up --build            (API, UI, Qdrant, PostgreSQL)
+# docker compose --profile llm up      (adds Ollama for answer generation; then: docker compose exec ollama ollama pull qwen2.5:3b-instruct)
+# Not executed in the sandbox this was written in (no Docker, no network). Pin image tags before production use.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: erag
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: erag
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U erag"]
+      interval: 5s
+      retries: 10
+  qdrant:
+    image: qdrant/qdrant:latest
+    volumes: [qdrant:/qdrant/storage]
+  ollama:
+    image: ollama/ollama:latest
+    profiles: [llm]
+    volumes: [ollama:/root/.ollama]
+  api:
+    build: .
+    depends_on:
+      postgres: {condition: service_healthy}
+      qdrant: {condition: service_started}
+    environment: &env
+      ERAG_DATABASE_URL: postgresql://erag:${POSTGRES_PASSWORD}@postgres:5432/erag
+      ERAG_VECTOR_STORE: qdrant
+      ERAG_QDRANT_URL: http://qdrant:6333
+      ERAG_EMBEDDER: ${ERAG_EMBEDDER:-bge-small}
+      ERAG_RERANKER: ${ERAG_RERANKER:-cross-encoder}
+      ERAG_LLM_URL: ${ERAG_LLM_URL:-}
+      ERAG_LLM_MODEL: ${ERAG_LLM_MODEL:-qwen2.5:3b-instruct}
+      ERAG_SEED_DEMO: ${ERAG_SEED_DEMO:-0}
+      HF_HOME: /app/data/hf
+    volumes: [appdata:/app/data]
+    ports: ["8000:8000"]
+  ui:
+    build: .
+    command: streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+    depends_on: [api]
+    environment:
+      ERAG_API_URL: http://api:8000
+    ports: ["8501:8501"]
+volumes: {pgdata: {}, qdrant: {}, ollama: {}, appdata: {}}

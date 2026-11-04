@@ -1,0 +1,80 @@
+{
+  "_comment": "Small domain thesaurus used ONLY by the lexical fallback (BM25 query side, hashing embedder, extractive support scoring). Dense models such as BGE make most of it unnecessary. Keys and values are matched after normalization.",
+  "deadline": [
+    "within"
+  ],
+  "submission": [
+    "submitted",
+    "submit"
+  ],
+  "vacation": [
+    "annual",
+    "leave"
+  ],
+  "holiday": [
+    "annual",
+    "leave"
+  ],
+  "wfh": [
+    "remote",
+    "work"
+  ],
+  "home": [
+    "remote",
+    "household"
+  ],
+  "limit": [
+    "cap",
+    "up to"
+  ],
+  "cap": [
+    "limit"
+  ],
+  "salary": [
+    "pay"
+  ],
+  "sick": [
+    "medical",
+    "unwell"
+  ],
+  "password": [
+    "credentials",
+    "account"
+  ],
+  "vpn": [
+    "virtual private network"
+  ],
+  "laptop": [
+    "managed laptop",
+    "equipment"
+  ],
+  "reimburse": [
+    "reimbursement",
+    "claim"
+  ],
+  "refund": [
+    "reimbursement",
+    "claim"
+  ],
+  "expenses": [
+    "claim",
+    "reimbursement"
+  ],
+  "invoice": [
+    "receipt",
+    "invoices"
+  ],
+  "outage": [
+    "incident",
+    "priority one"
+  ],
+  "length": [
+    "characters"
+  ],
+  "long": [
+    "characters"
+  ],
+  "standard": [
+    "standard"
+  ]
+}

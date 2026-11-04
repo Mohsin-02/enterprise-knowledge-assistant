@@ -1,0 +1,11 @@
+NOVA DEMO COMPANY - LEAVE POLICY
+Synthetic training document. These are fictional rules for this project.
+
+Annual leave
+Full-time employees receive eighteen days of paid annual leave per calendar year. Leave is credited monthly. Employees should submit a planned annual leave request through the employee portal at least five working days before the first day of leave. The reporting manager approves or declines the request based on project coverage. Human Resources resolves questions about leave balances. An employee must receive approval before treating a planned absence as confirmed.
+
+Sick leave
+Employees receive eight days of paid sick leave per calendar year. An employee who is unexpectedly unwell should notify the reporting manager before the normal shift begins whenever practical. A medical certificate is required when a continuous sick absence exceeds two working days. The certificate is submitted to Human Resources. Employees do not need to publish medical details in a team chat.
+
+Carry forward and exceptions
+Up to five unused annual leave days may be carried into the next calendar year. Carried leave expires on the last day of March. Sick leave cannot be carried forward. Public holidays and scheduled weekly rest days are not deducted from a leave balance. A request for more than ten consecutive working days requires approval from both the reporting manager and the department head. Human Resources records approved exceptions in the employee portal so that payroll and leave balances remain consistent.
