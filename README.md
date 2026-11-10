@@ -83,3 +83,32 @@ Limitations: the corpus is tiny and synthetic, 40 questions cannot separate conf
 lexical proxy (not an entailment judge), and the 1.5b model scored lower than plain quoted answers.
 Not verified: Docker, Qdrant, PostgreSQL and LangChain code paths.
 "# enterprise-knowledge-assistant" 
+
+
+## 📸 Application Screenshots
+
+### 1. Streamlit Application Startup
+
+![Streamlit Application Startup](screenshots/01-streamlit-startup.jpg)
+
+### 2. RAG Retrieval Evaluation Metrics
+
+![RAG Evaluation Metrics](screenshots/02-rag-evaluation.jpg)
+
+### 3. FastAPI Backend Execution
+
+![FastAPI Backend Execution](screenshots/03-api-execution.jpg)
+
+### 4. Automated Testing Results
+
+![Automated Testing Results](screenshots/04-testing-results.jpg)
+
+### 5. Enterprise Knowledge Assistant Dashboard
+
+![Enterprise Knowledge Assistant Dashboard](screenshots/05-knowledge-assistant.jpg)
+
+### 6. Policy Comparison and Source Citations
+
+![Policy Comparison and Source Citations](screenshots/06-policy-comparison.jpg)
+
+---
